@@ -38,7 +38,7 @@ class PostController extends ApiController
     {
         $post = app(DeletePostAction::class)->run($request);
         //return $this->noContent();
-        return $this->json("Successful!!");
+        return $this->json("Successful!");
     }
     public function findPost(FindPostRequest $request)
     {
