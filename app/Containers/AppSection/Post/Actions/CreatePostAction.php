@@ -15,6 +15,8 @@ class CreatePostAction extends Action
             // add your request data here
             'title',
             'content',
+            'created_by_id',
+            'topic_id'
         ]);
 
         return app(CreatePostTask::class)->run($data);
